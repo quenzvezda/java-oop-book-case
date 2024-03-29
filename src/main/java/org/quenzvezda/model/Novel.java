@@ -30,7 +30,7 @@ public class Novel extends CommercialBook {
                 this.price = publisher.getProductionCost() * 1.50;
                 break;
             default:
-                // Handle default case or throw an exception
+                // TODO Create Exception to throw error
                 break;
         }
     }

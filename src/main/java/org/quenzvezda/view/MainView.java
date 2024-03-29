@@ -2,18 +2,18 @@ package org.quenzvezda.view;
 
 import lombok.AllArgsConstructor;
 import org.quenzvezda.model.*;
-import org.quenzvezda.service.AuthorService;
-import org.quenzvezda.service.BookService;
-import org.quenzvezda.service.PublisherService;
+import org.quenzvezda.service.impl.AuthorServiceImpl;
+import org.quenzvezda.service.impl.BookServiceImpl;
+import org.quenzvezda.service.impl.PublisherServiceImpl;
 
 import java.util.List;
 import java.util.Scanner;
 
 @AllArgsConstructor
 public class MainView {
-    private BookService bookService;
-    private AuthorService authorService;
-    private PublisherService publisherService;
+    private BookServiceImpl bookService;
+    private AuthorServiceImpl authorService;
+    private PublisherServiceImpl publisherService;
 
     public void showMainMenu() {
         Scanner scanner = new Scanner(System.in);
