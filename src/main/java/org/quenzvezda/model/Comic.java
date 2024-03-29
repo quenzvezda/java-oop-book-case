@@ -26,7 +26,7 @@ public class Comic extends CommercialBook {
 
     @Override
     public void calculatePrice() {
-        double multiplier = 1.25; // Default case if volume series is false and New Commer
+        double multiplier = 1.25;
         if (author.getRating().equalsIgnoreCase("New Commer") && volumeSeries) {
             multiplier = 1.35;
         } else if (author.getRating().equalsIgnoreCase("Good")) {
